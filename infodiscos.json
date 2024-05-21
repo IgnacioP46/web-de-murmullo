@@ -1,0 +1,20 @@
+{
+    "discos" : [
+        {
+            "titulo" : "Pueblo Nuevo",
+            "precio" : "14"
+        },
+        {
+            "titulo" : "Aeronabe Adolescente",
+            "precio" : "12"
+        },
+        {
+            "titulo" : "Firmado Carlota",
+            "precio" : "16"
+        },
+        {
+            "titulo" : "Angel Calvo",
+            "precio" : "18"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <link rel="icon" href="static/logo%20murmullo.png" type="image/png" sizes="16x16">
+    <link href="css/murmulloStyle.css" rel="stylesheet" type="text/css" src="css/murmullo-style.css">
+    <title>Carrito | Murmullorecords</title>
+     </head>
+
+  <body bgcolor=#d0d6dc>
+      <a href="/">Home</a>
+       <img src= "static/logo%20murmullo.png" ALIGN=left WIDTH=350 HEIGHT=400>
+      <div style="background-image:logo%20murmullo.png">
+      <font size=7 color=black> Murmullo records</font>
+        <h2>Resumen de Compra</h2>
+        <ul id="listaCobros"></ul>
+    </div>
+        <div class="container">
+    <form id="cobroForm">
+        <label> TITULO DEL DISCO: {{titulo}} </label> <br>
+        <label>DISCOS COMPRADOS: {{respuesta.monto}} </label><br>
+        <label>TOTAL DISCOS: {{total}}</label><br>
+        <label>PRECIO FINAL: {{precio_total}}</label>
+
+    </form></div>
+
+    <script>
+        // JavaScript para manejar los cobros
+        const cobroForm = document.getElementById("cobroForm");
+        const listaCobros = document.getElementById("listaCobros");
+
+        cobroForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const monto = parseFloat(document.getElementById("monto").value);
+
+            if (!isNaN(monto)) {
+                // Agregar el cobro a la lista
+                const li = document.createElement("li");
+                li.textContent = Monto: $${monto.toFixed(2)}`;
+                listaCobros.appendChild(li);
+
+                // Limpiar los campos del formulario
+                document.getElementById("monto").value = "";
+            } else {
+                alert("Ingrese un monto válido.");
+            }
+        });
+    </script>
+</body>
+</html>

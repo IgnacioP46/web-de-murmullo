@@ -1,0 +1,41 @@
+
+#container {
+  font-family:sans-serif; background-color: deeppink
+  padding-left: 20px;
+  background-color:bgcolor=#d0d6dc 
+}
+body{
+    background-color: bgcolor=#d0d6dc
+}
+a:link{
+    color: blue
+}
+a:hover {
+    color: green; font-family: sans-serif
+}
+h1 {
+    border-left-color: red
+}
+form {
+    border-top-right-radius:black; size:2px  width:75%
+}
+label {
+    padding: 5px
+}
+.inputs {
+    padding-left: 5px
+}
+p { 
+    font-family: sans-serif
+}
+title{
+    font-family:sans-serif
+    
+}
+font{
+    font-family: sans-serif
+    
+}
+bottom:hover{
+    background-color: black
+}

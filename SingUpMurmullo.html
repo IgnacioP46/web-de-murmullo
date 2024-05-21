@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+     <link rel="icon" href="static/logo%20murmullo.png" type="image/png" sizes="16x16">
+    <link href="static/css/murmulloStyle.css" rel="stylesheet" type="text/css" src="css/murmullo-style.css">
+    <title>Sing Up | Murmullorecords</title>
+     </head>
+
+  <body bgcolor=#d0d6dc>
+      <a href="/">Home</a>
+       <img src= "static/logo%20murmullo.png" ALIGN=left WIDTH=350 HEIGHT=400>
+      <div style="background-image:logo%20murmullo.png">
+      <font size=7 color=black> Murmullo records</font>
+        
+        <form action="processSignup" method="post" name="signup">
+                <label for="Nombre">
+                Nombre
+            </label>
+            <div class="inputs">
+                <input id="nombre" name="nombre" required="true" placeholder="Nombre" size="80" type="text" value=""/>
+            </div>
+          
+         <label for="apellidos">
+               Apellidos
+            </label>
+            <div class="inputs">
+                <input id="apellidos" name="apellidos" required="true" placeholder="Apellidos" size="80" type="text" value=""/>
+            </div>
+          
+          <label for="direccion">
+               Direccion
+            </label>
+            <div class="inputs">
+                <input id="direccion" name="direccion" required="true" placeholder="direccion" size="80" type="text" value=""/>
+            </div>
+          
+          <label for="piso_y_puerta">
+               Piso y Puerta
+            </label>
+            <div class="inputs">
+                <input id="piso_y_puerta" name="piso_y_puerta" required="true" placeholder="Piso y Puerta" size="80" type="text" value=""/>
+            </div>
+      
+          <label for="otras_indicaciones">
+              Otras Indicaciones
+            </label>
+            <div class="inputs">
+                <input id="otras_indicaciones" name="otras_indicaciones" required="true" placeholder="escalera, indicaciones... " size="80" type="text" value=""/>
+            </div>
+
+                <label for="email">
+                    Email
+                </label>
+				<div class="inputs">
+                    <input id="email" name="email" required="true" placeholder="Email" size="80" type="text" value=""/>
+                </div>
+                <label for="passwd">
+                    Password
+                </label>
+				<div class="inputs">
+                    <input id="passwd" name="passwd" required="true" placeholder="Password" size="80" type="password" value=""/>
+                </div>
+                <label for="confirm">
+                    Repeat Password
+                </label>
+				<div class="inputs">
+                    <input id="confirm" name="confirm" required="true" placeholder="confirmPassword" size="80" type="password" value=""/>
+                </div>
+                <label for="remember_me">
+                    <input id="remember_me" name="remember_me" type="checkbox" value="y"/>
+                    Remember Me
+                </label>
+                <div class="inputs">
+                    <input id="signup_submit" name="signup_submit" type="submit" value="Sign Up" />
+                </div>
+            </form>
+        </div>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854" integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==" data-cf-beacon='{"rayId":"809a6002cfe68674","token":"7e7e0d8a3be64c7ba2cf01bcb532c718","version":"2023.8.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

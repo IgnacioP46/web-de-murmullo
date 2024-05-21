@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         
+        <link rel="icon" href="static/logo%20murmullo.png" type="image/png" sizes="16x16">
+        <link href="static/css/murmulloStyle.css" rel="stylesheet" type="text/css" src="css/murmullo-style.css">
+        <title>Pueblo Nuevo | Murmullorecords</title> 
+        
+     </head>
+
+    <body bgcolor=#d0d6dc>
+        <div id="container">
+            <img src="static/logo%20murmullo.png" width="100x100">
+            <a href="/">Home</a>
+            <a href="/carrito"><font size="4">Carrito</font></a> | <a href="/login"><font size="4">Entrar</font></a> | <a href="/singup"><font size="4">Registrarse</font></a>
+            <center><h1><font size="7">MURMULLO RECORDS</font></h1> </center>
+              <hr size="3px" color="black" width="75%"/></div>
+        <img src="static/pueblonuevo%20front.png" WIDTH=600 HEIGHT=600 ALIGN=left>
+              <p><font size=7 color=black ALIGN=center>"EP Pueblo Nuevo 10" "</font></p>
+           <center> 
+               <p><font size=5 color=black ALIGN=center>El brillante debut del duo madrileño.<br>
+                   Un estimulante 10" que ofrece ritmos y sampleos con el mejor groove del panorama nacional.
+            </font></p></center>
+            <br>
+            <br>
+
+          <form action="/processcarrito" method="post", id="cobroForm">
+              <label for="monto">Cantidad:</label>
+              <input type="number" id="monto" name="monto" required><br><br>
+              <input type="hidden" id="posicion" name="posicion" value="0">
+        <button type="submit" id="agregar-al-carrito">Agregar al carrito</button>
+          </form>
+        <script>
+        const botonAgregarAlCarrito = document.getElementById("agregar-al-carrito");
+        botonAgregarAlCarrito.addEventListener("click", () => {
+            // Lógica para agregar el producto al carrito
+            alert("Producto agregado al carrito");
+        });
+    </script></form></div>
+        <br>
+        <br>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1qnwdP5dS24FL9QdTw9syO?utm_source=generator" width="50%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </body>
+</html>
